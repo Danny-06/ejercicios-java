@@ -5,15 +5,16 @@
  */
 public class Factura { // Clase principal
   public static void main(String[] args) {
-    System.out.println("Nota: 1 Peseta son  0,006 Euros.");
     
-    String dato_pesetas = System.console().readLine();
-    double  = Integer.parseInt(dato_pesetas);
-      
-    double euros = 0.006;
+    // IVA 21%
+    
+    double baseImp = 54;
+  
 
-    double resultado = pesetas * euros;
+    System.out.printf("Base Imponible %.2f\n", baseImp       );
+    System.out.printf("IVA            %.2f\n", baseImp * 0.21);
+    System.out.println("____________________"                );
+    System.out.printf("Total          %.2f\n", baseImp * 1.21);
     
-    System.out.println(pesetas + " Pesetas son " + resultado + " Euros.");
   }
 }

@@ -13,7 +13,7 @@ public class NumeroDiaSemana { // Clase principal
     System.out.println("Escribe un número para obtener el equivalente a su día de la semana (1-7).");
     
     int n = Integer.parseInt(s.nextLine());
-    String dia = ""; //dianatura
+    String dia = "";
     
     switch(n) {
       

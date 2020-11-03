@@ -4,7 +4,7 @@
  * 
  * @autor Daniel Fabián El Belaizi
  */
-public class Multiplo5 { // Clase principal
+public class Multiplo5For { // Clase principal
   public static void main(String[] args) {
     
     int i;

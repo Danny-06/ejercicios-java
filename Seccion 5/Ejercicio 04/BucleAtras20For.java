@@ -4,7 +4,7 @@
  * 
  * @autor Daniel Fabián El Belaizi
  */
-public class BucleAtras20 { // Clase principal
+public class BucleAtras20For { // Clase principal
   public static void main(String[] args) {
     
     int i;

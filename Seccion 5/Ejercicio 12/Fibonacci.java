@@ -10,16 +10,16 @@ public class Fibonacci { // Clase principal
     Scanner s = new Scanner(System.in);
     
     System.out.println("Introduzca la cantidad de número de la serie de Fibonacci que quiere obtener.");
-    int entrada = s.nextInt();
-    int e = entrada;
+    long entrada = s.nextInt();
+    long e = entrada;
     
-    int f1 = 0;  // Numero anterior a f2
-    int f2 = 0;
-    int f;       // Reserva del valor de f2 para luego darselo a f1
+    long f1 = 0;  // Numero anterior a f2
+    long f2 = 0;
+    long f;       // Reserva del valor de f2 para luego darselo a f1
     
     System.out.println();
     
-    int i;
+    long i;
     for(i = 1; i <= e; i++) {
 
         System.out.println(f2);

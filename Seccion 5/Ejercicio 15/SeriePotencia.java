@@ -4,7 +4,7 @@ import java.util.Scanner;
  * 
  * @autor Daniel Fabián El Belaizi
  */
-public class Potencia { // Clase principal
+public class SeriePotencia { // Clase principal
   public static void main(String[] args) {
 
     Scanner s = new Scanner(System.in);
@@ -16,24 +16,26 @@ public class Potencia { // Clase principal
     double e = s.nextInt(); // Exponente
     double r = 1;           // Resultado
 
-      int i;
-      if(e > 0) { // Si el exponente es '+'
+    for(int n = 1; n <= e; n++) {
 
-        for(i = 1; i <= e; i++) {
+      int i;
+      if(n > 0) { // Si el exponente es '+'
+
+        for(i = 1; i <= n; i++) {
 
           r = r * b; // Resultado igual a la base multiplicada por si misma el número de veces del exponente 
 
         }
 
-      } else if(e == 0){ // Si el exponente es '0'
+      } else if(n == 0){ // Si el exponente es '0'
 
           r = 1; // Resultado igual a 1
 
       } else { // Si el exponente es '-'
 
-        e = -e;
+        n = -n;
 
-        for(i = 1; i <= e; i++) {
+        for(i = 1; i <= n; i++) {
 
           r = r / b; // Resultado igual a la base dividida por si misma el número de veces del exponente 
 
@@ -43,7 +45,9 @@ public class Potencia { // Clase principal
 
       System.out.println();
 
-      System.out.println(b + " elevado a " + e + " es igual a " + r);
+      System.out.println(b + " elevado a " + n + " es igual a " + r);
+
+    }
 
   }
 }

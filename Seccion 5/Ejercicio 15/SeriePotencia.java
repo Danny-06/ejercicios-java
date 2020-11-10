@@ -16,10 +16,12 @@ public class SeriePotencia { // Clase principal
     double e = s.nextInt(); // Exponente
     double r = 1;           // Resultado
 
-    for(int n = 1; n <= e; n++) {
+    for(int n = 1; n <= e; n++) { // Realizar operación hasta que n sea igual que el exponente
 
       int i;
       if(n > 0) { // Si el exponente es '+'
+
+        r = 1; // Reiniciar resultado para evitar que se acumule en cada iteración del bucle
 
         for(i = 1; i <= n; i++) {
 

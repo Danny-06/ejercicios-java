@@ -9,54 +9,39 @@ public class MaximoMinimo { // Clase principal
 
     Scanner s = new Scanner(System.in);
 
-/*
-    for(int i = 0; i < array.length; i++) {
-      // Introducción de datos mediante 'Números aleatorios' [n1,n2]
-      int n1 = 0; // Número inicial del intervalo
-      int n2 = -n1; // NO MODIFICAR
-          n2 =+ 20; // Número final del intervalo
 
-      array[i] = (int)(Math.random() * (n2 + 1)) + n1;
+    final int L = 4; // Longitud array
+    int[] entrada = new int[L];
+    System.out.print("Introduzca " + L + " numeros\n");
+    for(int i = 0; i < L; i++) {
 
-      // Entrada de datos a mano
-      //array[i] = Integer.parseInt(s.nextLine);
+      entrada[i] = Integer.parseInt(s.nextLine());
+
     }
-*/
-    int l = 20; // Longitud array
-    int[] entrada = new int[l];
-    int min = Integer.MIN_VALUE;
-    int max = Integer.MAX_VALUE;
-    
-    for(int i = 0; i < l; i++) {
-      // Números aleatorios [n1,n2]
-      int n1 = 0; // Número inicial del intervalo
-      int n2 = -n1; // NO MODIFICAR 
-          n2 =+ 20; // Número final del intervalo
-      entrada[i] = (int)(Math.random() * (n2 + 1)) + n1;
 
-      //entrada[i] = Integer.parseInt(s.nextLine);
-      
+    int min = entrada[0];
+    int max = entrada[0];
+
+    for(int e : entrada) {
       // Mínimo
-      if(i != 0 && entrada[i] < entrada[i-1]) {
-        min = i;
-      } else if(i != 0 && i == (l-1) && entrada[0] < entrada[l-1]) {
-        min = 0;
+      if(e < min) {
+        min = e;
       }
-
       // Máximo
-      if(i != 0 && entrada[i] > entrada[i-1]) {
-        max = i;
-      } else if(i != 0 && i == (l-1) && entrada[0] < entrada[l-1]) {
-        max = 0;
+      if(e > max) {
+        max = e;
       }
     }
+    
 
-    for(int i = 0; i < l; i++) {
-      System.out.print(entrada[i]);
+    System.out.println();
+    for(int e : entrada) {
+      System.out.print(e);
 
-      if(i == max) {
+      if(e == max) {
         System.out.print(" (Máximo)");
-      } else if(i == min) {
+      }
+      if(e == min) {
         System.out.print(" (Mínimo)");
       }
 

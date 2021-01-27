@@ -31,6 +31,7 @@ public class SumaFilaColumnasAleatorio { // Clase principal
         String simb = "  "; // Simbolo
         int sumFila = 0;
         int sumColumna = 0;
+        int sumTotal = 0;
 
         for(int i = 0; i < Y; i++) { // Filas
 
@@ -45,11 +46,14 @@ public class SumaFilaColumnasAleatorio { // Clase principal
 
             System.out.printf("%5d\t",array[i][j]); // Dibujar números del array
             sumFila += array[i][j];
+            sumTotal += sumFila; // Suma Total
             
             if(j == X - 1) { // Dibujar Suma de Filas
               
+              sumTotal += sumFila; // Suma Total
               System.out.println("|"+sumFila+"|");
               sumFila = 0; // Reinicio de valor por Fila
+              
             }
 
           }
@@ -64,12 +68,15 @@ public class SumaFilaColumnasAleatorio { // Clase principal
 
           for(int j = 0; j < Y; j++) { // Filas
             sumColumna += array[j][i];
+            if(j == Y - 1) {sumTotal += sumColumna;} // Suma Total
           }
 
           System.out.print("  |"+sumColumna+"|\t"); // Dibujar Suma de Columnas
           sumColumna = 0; // Reinicio del valor por Columna
 
         }
+
+        System.out.print("||"+sumTotal+"||");
 
 
     

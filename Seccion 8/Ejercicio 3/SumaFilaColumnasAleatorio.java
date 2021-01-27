@@ -4,7 +4,7 @@ import java.util.Scanner;
  * 
  * @autor Daniel Fabián El Belaizi
  */
-public class SumaFilaColumnas { // Clase principal
+public class SumaFilaColumnasAleatorio { // Clase principal
   public static void main(String[] args) {
 
 

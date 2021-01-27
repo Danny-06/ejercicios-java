@@ -8,22 +8,16 @@ public class SumaFilaColumnas { // Clase principal
   public static void main(String[] args) {
 
 
+        Scanner m = new Scanner(System.in);
 
         int X = 5; // Ancho array
         int Y = 4; // Alto array
         int[][] array = new int[Y][X];
         for(int i = 0; i < Y; i++) {
           for(int j = 0; j < X; j++) {
-            // Introducción de datos mediante 'Números aleatorios' [n1,n2]
-            int n1 = 0; // Número inicial del intervalo
-            int n2 = -n1; // NO MODIFICAR
-                n2 =+ 20; // Número final del intervalo
-      
-            array[i][j] = (int)(Math.random() * (n2 + 1)) + n1;
-      
             // Entrada de datos a mano
-            // System.out.print("Introduzca el valor del array en x = " + i + ", y = " + j + ".\n> ")
-            //array[i] = Integer.parseInt(s.nextLine());
+            System.out.print("Introduzca el valor del array en x = " + j + ", y = " + i + ".\n> ");
+            array[i][j] = Integer.parseInt(m.nextLine());
           }
         }
 

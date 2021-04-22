@@ -1,0 +1,79 @@
+/* Reglas de estilo génericas */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+}
+
+/*****************/
+
+.container {
+  display: flex;
+  height: 100%;
+  /*user-select: none;*/
+}
+
+.form {
+  padding: 1rem;
+  background: linear-gradient(0deg, #68b378, #447992);
+  border-radius: 10px;
+  margin: auto;
+}
+
+.labelName, .inputNota {
+  display: block;
+  width: fit-content;
+  margin: 0.5rem auto;
+  font-size: 2rem;
+}
+
+.inputNota {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: auto;
+  font-size: 2.5rem;
+  background: #0a0;
+  border-radius: 10px;
+  border: solid 2px #030;
+  box-shadow: #000 inset 0 0 5px 0;
+  cursor: pointer;
+  transition: 0.7s;
+  padding: 0.5rem;
+}
+
+input[type="submit"]:hover {
+  background: #f50;
+  color: #000;
+}
+
+#output {
+  width: 80%;
+  margin: 1rem auto;
+  display: block;
+  min-height: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
+  background: #402858;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#output[placeholder] {
+  user-select: none;
+  color: #fff7;
+}

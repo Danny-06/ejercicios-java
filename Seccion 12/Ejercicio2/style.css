@@ -1,0 +1,44 @@
+/* Reglas de estilo génericas */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+}
+
+/*****************/
+
+.container {
+  display: flex;
+  height: 100%;
+  user-select: none;
+}
+
+h1.datos {
+  margin: auto;
+  font-size: 3rem;
+  text-align: center;
+  border: solid 0.2rem #fff;
+  border-radius: 10px;
+  background: #333;
+  padding: 0.5rem;
+  
+  transition: 0.7s;
+}
+
+h1.datos:hover {
+  color: #06f;
+  background: #6f006d;
+  transform: scale(1.5);
+  box-shadow: #fff 0 0 10px 0;
+}

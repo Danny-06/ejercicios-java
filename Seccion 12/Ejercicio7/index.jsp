@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ejercicio 5</title>
+    <title>Ejercicio 7</title>
     <meta name="color-scheme" content="dark">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

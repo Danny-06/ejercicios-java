@@ -22,9 +22,9 @@
       <form class="form" action="#">
         <h1>Escriba 3 notas para calcular la media</h1>
         <!--label class="labelName">Escriba su nombre</label-->
-        <input type="number" class="inputNota" name="nota1" value="" placeholder="Nota 1" autocomplete="off">
-        <input type="number" class="inputNota" name="nota2" value="" placeholder="Nota 2" autocomplete="off">
-        <input type="number" class="inputNota" name="nota3" value="" placeholder="Nota 3" autocomplete="off">
+        <input type="number" class="inputNota" name="nota1" value="" placeholder="Nota 1" step="0.01" autocomplete="off">
+        <input type="number" class="inputNota" name="nota2" value="" placeholder="Nota 2" step="0.01" autocomplete="off">
+        <input type="number" class="inputNota" name="nota3" value="" placeholder="Nota 3" step="0.01" autocomplete="off">
         <output id="output" placeholder>Resultado</output>
         <input type="submit">
       </form>
